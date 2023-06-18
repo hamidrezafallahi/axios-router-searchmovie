@@ -1,0 +1,59 @@
+.c1{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    height: 50px;
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.c2{
+    background: burlywood;
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+.home{
+    background: rgb(210, 245, 213);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+}
+.aboutus{
+    background: rgb(245, 227, 210);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+}
+.account{
+    background: rgb(245, 210, 226);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+}
+.products{
+    background: rgb(191, 203, 243);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+}
+.tables{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+th button{
+    width: 100%;
+    columns: 1;
+}
