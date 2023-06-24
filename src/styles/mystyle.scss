@@ -1,59 +1,128 @@
-.c1{
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 8px;
-    height: 50px;
-    width: 400px;
-    margin: 30px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-.c2{
-    background: burlywood;
-    width: 60%;
+.container{
+    width: 90%;
     margin: 10px auto;
+    border: 1px solid green;
+    padding: 8px;
+
+    .aside{
+        width: 20%;
+        background: bisque;
+    }
+    button{
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+};
+.slider{
+    border: 1px solid red;
+}
+.container{
+    .content{
+        display: flex;
+    }
+}
+main{
+    width: 80%;
+}
+aside{
+    width: 20%;
+    height: 70vh;
+    text-align: center;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 10px;
+    margin-left: 8px;
+    .filters{
+        button{
+            width: 70%;
+            height: 30px;
+            margin: 4px;
+            padding: 2px;
+        }
+    }
+}
+.slides{
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+    background: rgba(255, 228, 196, 0.473);
+    height:500px;
+    
 
 }
-.home{
-    background: rgb(210, 245, 213);
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 5px;
+.slide-images{
+    width: 70%;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    left: 150px;
+     display: none;
+
 }
-.aboutus{
-    background: rgb(245, 227, 210);
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 5px;
+.slide-images:first-child{
+    display: block;
 }
-.account{
-    background: rgb(245, 210, 226);
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 5px;
-}
-.products{
-    background: rgb(191, 203, 243);
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 5px;
-}
-.tables{
+.indicate{
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    flex-direction: column;
+    height: 400px;
+    justify-content:space-between;
+    position: absolute;
+    top: 10px;
+    left: -35px;
+    li{
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(173, 248, 111, 0.452);
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+
 }
-th button{
-    width: 100%;
-    columns: 1;
+//////////////////////////////////////////////////////////
+.movie-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.movie-cart{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.39);
+    .poster-container{
+        width: 100%;
+        height: 50%;
+        background: blanchedalmond;
+        border-radius: 16px 16px 0 0;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%
+        }
+    }
+    .movie-info{
+        background: greenyellow;
+        width: 100%;
+        height: 50%;
+        margin-top: -16px;
+        padding-top: 16px;
+        border-radius: 0 0 16px 16px;
+    }
+    .author{
+        display: flex;
+        justify-content: space-around;
+    }
 }
